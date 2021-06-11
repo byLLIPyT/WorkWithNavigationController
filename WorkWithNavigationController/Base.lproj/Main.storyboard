@@ -17,15 +17,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAJ-o9-CFR">
-                                <rect key="frame" x="182.5" y="433" width="49" height="30"/>
+                                <rect key="frame" x="157" y="423" width="100" height="50"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Cws-TF-dj0"/>
+                                    <constraint firstAttribute="width" constant="100" id="RNx-tP-tD6"/>
+                                </constraints>
                                 <state key="normal" title="GREEN"/>
                                 <connections>
                                     <action selector="toGreenScene:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T7n-iP-rDz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kle-9H-oe4">
-                                <rect key="frame" x="188" y="322" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kle-9H-oe4">
+                                <rect key="frame" x="157" y="303" width="100" height="50"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="83c-DM-XSn"/>
+                                    <constraint firstAttribute="width" constant="100" id="dKE-iT-dtB"/>
+                                </constraints>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="toPreviousFromRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7rc-Ex-jsm"/>
@@ -35,8 +44,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
+                            <constraint firstItem="Kle-9H-oe4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="956-4B-gQt"/>
                             <constraint firstItem="CAJ-o9-CFR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GV8-nl-R0D"/>
                             <constraint firstItem="CAJ-o9-CFR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="J44-9E-y1N"/>
+                            <constraint firstItem="Kle-9H-oe4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Za7-lg-PdJ"/>
+                            <constraint firstItem="CAJ-o9-CFR" firstAttribute="top" secondItem="Kle-9H-oe4" secondAttribute="bottom" constant="70" id="icY-AI-Zx8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="RED" prompt="Scene red" largeTitleDisplayMode="always" id="8ad-dx-ASS">
@@ -56,15 +68,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSM-5t-4At">
-                                <rect key="frame" x="177" y="433" width="60" height="30"/>
+                                <rect key="frame" x="157" y="423" width="100" height="50"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FET-5x-zce"/>
+                                    <constraint firstAttribute="width" constant="100" id="r3B-Wj-tXX"/>
+                                </constraints>
                                 <state key="normal" title="YELLOW"/>
                                 <connections>
                                     <action selector="toYellowScene:" destination="wV7-Ca-d3F" eventType="touchUpInside" id="lud-zS-1tX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixe-B2-zSH">
-                                <rect key="frame" x="190" y="312" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixe-B2-zSH">
+                                <rect key="frame" x="157" y="303" width="100" height="50"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="u1r-cS-X4U"/>
+                                    <constraint firstAttribute="width" constant="100" id="whA-jC-XgX"/>
+                                </constraints>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="toPreviousFromGreen:" destination="wV7-Ca-d3F" eventType="touchUpInside" id="UMP-F7-g4Q"/>
@@ -75,6 +96,8 @@
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="MSM-5t-4At" firstAttribute="centerX" secondItem="aN2-T7-Tng" secondAttribute="centerX" id="7VY-MY-RO3"/>
+                            <constraint firstItem="ixe-B2-zSH" firstAttribute="centerX" secondItem="aN2-T7-Tng" secondAttribute="centerX" id="EqP-XW-yIH"/>
+                            <constraint firstItem="MSM-5t-4At" firstAttribute="top" secondItem="ixe-B2-zSH" secondAttribute="bottom" constant="70" id="GV3-Vh-QaO"/>
                             <constraint firstItem="MSM-5t-4At" firstAttribute="centerY" secondItem="aN2-T7-Tng" secondAttribute="centerY" id="jrT-68-i1m"/>
                         </constraints>
                     </view>
@@ -95,15 +118,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgF-8l-swj">
-                                <rect key="frame" x="192" y="433" width="30" height="30"/>
+                                <rect key="frame" x="157" y="423" width="100" height="50"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7Cp-gy-5qM"/>
+                                    <constraint firstAttribute="height" constant="50" id="UaR-Dh-4fk"/>
+                                </constraints>
                                 <state key="normal" title="RED"/>
                                 <connections>
                                     <action selector="toRootScene:" destination="jIs-wc-5Ph" eventType="touchUpInside" id="yac-Bb-CFh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIu-ni-J6V">
-                                <rect key="frame" x="190" y="307" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIu-ni-J6V">
+                                <rect key="frame" x="157" y="303" width="100" height="50"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="cJZ-1x-hpJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="y9X-85-T29"/>
+                                </constraints>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="toPreviousFromYellow:" destination="jIs-wc-5Ph" eventType="touchUpInside" id="Rot-BV-4vZ"/>
@@ -113,6 +145,8 @@
                         <viewLayoutGuide key="safeArea" id="fcF-6W-283"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="tgF-8l-swj" firstAttribute="top" secondItem="OIu-ni-J6V" secondAttribute="bottom" constant="70" id="INS-g1-Tja"/>
+                            <constraint firstItem="OIu-ni-J6V" firstAttribute="centerX" secondItem="EGy-Jq-QV4" secondAttribute="centerX" id="gWR-1Y-BUd"/>
                             <constraint firstItem="tgF-8l-swj" firstAttribute="centerY" secondItem="EGy-Jq-QV4" secondAttribute="centerY" id="kOg-YJ-ajS"/>
                             <constraint firstItem="tgF-8l-swj" firstAttribute="centerX" secondItem="EGy-Jq-QV4" secondAttribute="centerX" id="kqx-LR-EI2"/>
                         </constraints>
@@ -150,6 +184,9 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
