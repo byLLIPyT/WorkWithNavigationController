@@ -8,47 +8,118 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--RED-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WorkWithNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RedVC" id="BYZ-38-t0r" customClass="ViewController" customModule="WorkWithNavigationController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAJ-o9-CFR">
+                                <rect key="frame" x="182.5" y="433" width="49" height="30"/>
+                                <state key="normal" title="GREEN"/>
+                                <connections>
+                                    <action selector="toGreenScene:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T7n-iP-rDz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kle-9H-oe4">
+                                <rect key="frame" x="188" y="322" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="toPreviousFromRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7rc-Ex-jsm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="CAJ-o9-CFR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GV8-nl-R0D"/>
+                            <constraint firstItem="CAJ-o9-CFR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="J44-9E-y1N"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="8ad-dx-ASS"/>
+                    <navigationItem key="navigationItem" title="RED" prompt="Scene red" largeTitleDisplayMode="always" id="8ad-dx-ASS">
+                        <barButtonItem key="backBarButtonItem" title="BBB" id="gJy-Cd-RTy"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="932" y="108"/>
         </scene>
-        <!--View Controller-->
+        <!--GREEN-->
         <scene sceneID="NPz-JY-sfX">
             <objects>
-                <viewController id="wV7-Ca-d3F" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GreenVC" id="wV7-Ca-d3F" customClass="ViewController" customModule="WorkWithNavigationController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aN2-T7-Tng">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSM-5t-4At">
+                                <rect key="frame" x="177" y="433" width="60" height="30"/>
+                                <state key="normal" title="YELLOW"/>
+                                <connections>
+                                    <action selector="toYellowScene:" destination="wV7-Ca-d3F" eventType="touchUpInside" id="lud-zS-1tX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixe-B2-zSH">
+                                <rect key="frame" x="190" y="312" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="toPreviousFromGreen:" destination="wV7-Ca-d3F" eventType="touchUpInside" id="UMP-F7-g4Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dCt-NU-WJf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="MSM-5t-4At" firstAttribute="centerX" secondItem="aN2-T7-Tng" secondAttribute="centerX" id="7VY-MY-RO3"/>
+                            <constraint firstItem="MSM-5t-4At" firstAttribute="centerY" secondItem="aN2-T7-Tng" secondAttribute="centerY" id="jrT-68-i1m"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="GREEN" prompt="Scene green" largeTitleDisplayMode="always" id="HSd-9J-sok">
+                        <barButtonItem key="backBarButtonItem" title="BBB" id="doP-Mc-r2K"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zB8-t3-U7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1726" y="108"/>
+            <point key="canvasLocation" x="1724.6376811594205" y="107.8125"/>
         </scene>
-        <!--View Controller-->
+        <!--YELLOW-->
         <scene sceneID="ftc-Lr-Gac">
             <objects>
-                <viewController id="jIs-wc-5Ph" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YellowVC" id="jIs-wc-5Ph" customClass="ViewController" customModule="WorkWithNavigationController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EGy-Jq-QV4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgF-8l-swj">
+                                <rect key="frame" x="192" y="433" width="30" height="30"/>
+                                <state key="normal" title="RED"/>
+                                <connections>
+                                    <action selector="toRootScene:" destination="jIs-wc-5Ph" eventType="touchUpInside" id="yac-Bb-CFh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIu-ni-J6V">
+                                <rect key="frame" x="190" y="307" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="toPreviousFromYellow:" destination="jIs-wc-5Ph" eventType="touchUpInside" id="Rot-BV-4vZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fcF-6W-283"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="tgF-8l-swj" firstAttribute="centerY" secondItem="EGy-Jq-QV4" secondAttribute="centerY" id="kOg-YJ-ajS"/>
+                            <constraint firstItem="tgF-8l-swj" firstAttribute="centerX" secondItem="EGy-Jq-QV4" secondAttribute="centerX" id="kqx-LR-EI2"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="YELLOW" prompt="Scene yellow" largeTitleDisplayMode="never" id="Umj-FJ-xOg">
+                        <barButtonItem key="backBarButtonItem" title="BBB" id="Vzn-fz-y5E"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMb-mw-9zl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,8 +130,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LuX-6U-PaW" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PtI-ng-bwF">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="PtI-ng-bwF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -74,8 +145,14 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
